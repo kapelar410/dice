@@ -1,5 +1,6 @@
-var randomNumber1 = Math.floor((Math.random() * 6) + 1);
-if (randomNumber1 === 1){
+document.querySelector(".btn").addEventListener("click", function(){
+  var randomNumber1 = Math.floor((Math.random() * 6) + 1);
+  if (randomNumber1 === 1){
     document.querySelector("img.img1").setAttribute("src", "images/dice1.png");
   }
   else if (randomNumber1 === 2){
@@ -19,7 +20,7 @@ if (randomNumber1 === 1){
   }
 
 //   --------------- this is for player2 ----------------
-var randomNumber2 = Math.floor((Math.random() * 6) + 1);
+  var randomNumber2 = Math.floor((Math.random() * 6) + 1);
   if (randomNumber2 === 1){
     document.querySelector("img.img2").setAttribute("src", "images/dice1.png");
   }
@@ -41,12 +42,14 @@ var randomNumber2 = Math.floor((Math.random() * 6) + 1);
     
 
 // ---------choose a winner ---------------
-if (randomNumber1 > randomNumber2){
-    document.querySelector("h1").innerHTML = "🚩 Player 1 wins!"
-}
-else if (randomNumber1 < randomNumber2){
-  document.querySelector("h1").innerHTML = "Player 2 wins! 🚩"
-}
-else{
-  document.querySelector("h1").innerHTML = "Its a draw!!"
-}
+  if (randomNumber1 > randomNumber2){
+      document.querySelector("h1").innerHTML = "🚩 Player 1 wins!"
+  }
+  else if (randomNumber1 < randomNumber2){
+    document.querySelector("h1").innerHTML = "Player 2 wins! 🚩"
+  }
+  else{
+    document.querySelector("h1").innerHTML = "Its a draw!!"
+  }
+})
+
