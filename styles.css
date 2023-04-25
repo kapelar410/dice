@@ -39,3 +39,13 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+
+.btn{
+  margin-top: 100px;
+  width: 300px;
+  height: 100px;
+  font-family: 'Lobster', cursive;
+  background-color: #4ECCA3;
+  border: 0px;
+  font-size: 4rem;
+}
